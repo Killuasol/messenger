@@ -1,0 +1,683 @@
+@import url('https://fonts.cdnfonts.com/css/lato');
+
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+}
+
+.body {
+  width: 1400px;
+  height: 800px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.relative {
+  position: relative;
+}
+
+//шаблоны
+
+%tpl-text-nomad {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #B5B5B5;
+}
+
+%tpl-text-name {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+%tpl-text-time {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8D8D8D;
+}
+
+%tpl-text-info {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+// header
+.header {
+  width: 71.5px;
+  height: 800px;
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 10.5px;
+}
+
+//светофор
+
+.lights {
+  width: 52px;
+  height: 12px;
+  margin-bottom: 19px;
+  display: flex;
+  justify-content: space-between;
+
+  &__red {
+    background-color: red;
+  }
+
+  &__yellow {
+    background-color: yellow;
+  }
+
+  &__green {
+    background-color: green;
+  }
+
+  &__signal {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+  }
+}
+
+// навигация
+
+.navigation {
+  width: 40px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 302px;
+
+  &__red {
+    background-color: #de1616;
+  }
+
+  &__color {
+    background-color: #ee4141;
+  }
+
+  &__orange {
+    background-color: #e73e0d;
+  }
+
+  &__pink {
+    background-color: #e8206a;
+  }
+
+  &__lilac {
+    background-color: #910cc7;
+  }
+
+  &__blue {
+    background-color: #1542ce;
+  }
+
+  &__turquoise {
+    background-color: #17c2e1;
+  }
+
+  &__list {
+    width: 41.5px;
+    height: 41.5px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+    transition: opacity 500ms, transform 500ms;
+
+    &:hover {
+      opacity: unset;
+      transform: scale(1.4);
+    }
+  }
+}
+
+// добавить объект навигации
+
+.add {
+  width: 41.5px;
+  height: 41.5px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #383030;
+
+  &:hover {
+    transform: scale(1.25);
+  }
+
+  transition: transform 400ms;
+}
+
+// main
+
+.main {
+  width: 1330px;
+  height: 800px;
+  display: flex;
+}
+
+// список кочевников
+
+.nomad {
+  width: 236px;
+  height: 764.5px;
+  background: #25272A;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  padding: 35.5px 0 0 24px;
+
+  //first-block
+  &__text-head {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-right: 5px;
+  }
+
+  &__arrow {
+    margin-right: 82px;
+  }
+
+  &__head {
+    width: 250px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  //next-block
+  &__treads {
+    width: 87px;
+    height: 18px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  &__text-treads {
+    @extend %tpl-text-nomad;
+  }
+
+  //last-block
+  &__channels {
+    width: 213px;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  &__text-channels {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #919191;
+  }
+
+  // список чатов
+  &__chat {
+    width: 214px;
+    height: 330px;
+    margin-bottom: 10px;
+  }
+
+  .chat {
+    &__list {
+      width: 214px;
+      height: 30px;
+      border-radius: 4px;
+      @keyframes circle-to-square {
+        from {
+          width: 214px;
+          height: 30px;
+        }
+
+        to {
+          width: 201px;
+          height: 26px;
+          background-color: #888888;
+          padding: 4px 0 0 13px;
+        }
+      }
+
+      &:hover {
+        animation-name: circle-to-square;
+        animation-duration: 400ms;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    &__text {
+      @extend %tpl-text-nomad;
+
+      &:hover {
+        font-weight: 700;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  //заголовок друзей
+
+  &__mate {
+    width: 213px;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  //список друзей
+
+  &__friends {
+    width: 215px;
+    height: 266px;
+  }
+
+  .friends {
+    &__list {
+      width: 215px;
+      height: 33px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 11px;
+    }
+
+    &__online {
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+      margin-right: 7px;
+    }
+
+    &__online-check1 {
+      background: #70CC16;
+    }
+
+    &__online-check2 {
+      background: #666666;
+    }
+
+    &__img {
+      margin-right: 11px;
+      cursor: pointer;
+    }
+
+    &__text {
+      @extend %tpl-text-nomad;
+      transition: color 400ms;
+
+      &:hover {
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+// основная переписка
+
+.general {
+  width: 827px;
+  height: 800px;
+  position: relative;
+  padding: 0 23.5px 0 23.5px;
+
+  // голова основной переписки
+
+  &__head {
+    width: 870px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    border-bottom: 1px solid #bdbdbd;
+    margin-bottom: 20px;
+  }
+
+  &__users {
+    width: 495px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 25px;
+  }
+
+  .users {
+    &__chat {
+      display: flex;
+    }
+
+    &__text {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+      margin-right: 7.5px;
+    }
+
+    &__online {
+      @extend %tpl-text-nomad;
+      color: #A4A4A4;
+      margin-left: 6px;
+    }
+  }
+
+  &__input {
+    width: 224px;
+    height: 27px;
+    border: 0.5px solid rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    padding: 4px 0 0 14px;
+    margin-right: 23px;
+
+    &::placeholder {
+      @extend %tpl-text-nomad;
+      color: #8D8D8D;
+    }
+  }
+
+  &__bell {
+    margin-right: 22px;
+  }
+
+  &__unread {
+    width: 5.5px;
+    height: 5.5px;
+    border-radius: 3px;
+    position: absolute;
+    background-color: red;
+    left: 817px;
+    top: 39px;
+  }
+
+  //непосредственно переписка
+
+  &__name {
+    width: 823px;
+    max-height: 269px;
+    min-height: 36px;
+    display: flex;
+    margin-bottom: 9px;
+
+    &__img {
+      width: 33px;
+      height: 33px;
+      margin-right: 13px;
+      cursor: pointer;
+    }
+  }
+
+  &__massage {
+    max-height: 269px;
+    min-height: 36px;
+  }
+
+  .massage {
+    &__head {
+      display: flex;
+    }
+
+    &__name {
+      @extend %tpl-text-name;
+      margin-right: 8px;
+      margin-bottom: 1px;
+    }
+
+    &__time {
+      @extend %tpl-text-time
+    }
+
+    &__info {
+      @extend %tpl-text-info;
+    }
+
+    &__img {
+      position: absolute;
+      top: 66px;
+      right: 195px;
+      cursor: pointer;
+    }
+
+    &__block {
+      width: 267px;
+      height: 218px;
+    }
+  }
+
+  // separator
+  &__separator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 11px;
+  }
+
+  .separator {
+    &__block {
+      width: 332px;
+      height: 1px;
+      background: #000000;
+      mix-blend-mode: normal;
+      opacity: 0.16;
+    }
+
+    &__text {
+      @extend %tpl-text-info;
+      color: #8D8D8D;
+    }
+  }
+
+  &__delimiter {
+    width: 823px;
+    height: 4px;
+  }
+
+  // нижняя колонка сообщений
+  &__under {
+    width: 827px;
+    height: 71.5px;
+    border-top: 1px solid #bdbdbd;
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+    padding-left: 2px;
+  }
+
+  .under {
+    &__attach {
+      margin-right: 20px;
+    }
+
+    &__micro {
+      margin-right: 21px;
+    }
+
+    &__text {
+      @extend %tpl-text-nomad;
+      color: #8D8D8D;
+      margin-right: 611px;
+    }
+  }
+}
+
+// address
+
+.connection {
+  width: 180px;
+  height: 800px;
+  background: #eeeaea;
+  mix-blend-mode: normal;
+  padding: 217px 0 0 20px;
+
+  &__photo {
+    position: absolute;
+    right: -5px;
+    top: 0;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+  }
+
+  &__text-head {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-right: 6px;
+  }
+
+  &__online {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: #70CC16;
+  }
+
+  &__designer {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5F6164;
+    margin-bottom: 20px;
+  }
+
+  &__social {
+    width: 106px;
+    height: 22px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 19px;
+  }
+
+  .social {
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 21px;
+      height: 21px;
+      border-radius: 11px;
+      background: #d0c5c5;
+      border: none;
+      cursor: pointer;
+      transition: transform 400ms;
+
+      &:hover {
+        transform: scale(1.3);
+        color: red;
+      }
+    }
+  }
+
+  &__message {
+    width: 160px;
+    height: 25px;
+    display: flex;
+    margin-bottom: 16px;
+  }
+
+  &__message-button {
+    width: 135.5px;
+    height: 25px;
+    background: #3577EF;
+    border-radius: 4px;
+    margin-right: 2px;
+    border: none;
+    cursor: pointer;
+
+    &__text {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  }
+
+  &__message-button2 {
+    width: 25.5px;
+    height: 25px;
+    background: #3577EF;
+    border-radius: 4px;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+  }
+
+  //контактная информация
+  &__relations {
+    width: 120px;
+    height: 180px;
+  }
+
+  .relations {
+    &__list {
+    }
+
+    &__text-head {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #5F6164;
+      margin-bottom: 2px;
+    }
+
+    &__text {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+      margin-bottom: 11px;
+    }
+  }
+}
+
+
+
+
