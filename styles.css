@@ -6,7 +6,7 @@ a {
 }
 
 .body {
-  width: 1400px;
+  width: 100%;
   height: 800px;
   display: flex;
   margin: 0 auto;
@@ -22,7 +22,7 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #B5B5B5;
+  color: #b5b5b5;
 }
 
 .general .massage__name {
@@ -40,7 +40,7 @@ a {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  color: #8D8D8D;
+  color: #8d8d8d;
 }
 
 .general .separator__text, .general .massage__info {
@@ -155,7 +155,7 @@ a {
 .nomad {
   width: 236px;
   height: 764.5px;
-  background: #25272A;
+  background: #25272a;
   mix-blend-mode: normal;
   opacity: 0.75;
   padding: 35.5px 0 0 24px;
@@ -166,7 +166,7 @@ a {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-right: 5px;
 }
 .nomad__arrow {
@@ -231,7 +231,7 @@ a {
 }
 .nomad .chat__text:hover {
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .nomad__mate {
   width: 213px;
@@ -258,7 +258,7 @@ a {
   margin-right: 7px;
 }
 .nomad .friends__online-check1 {
-  background: #70CC16;
+  background: #70cc16;
 }
 .nomad .friends__online-check2 {
   background: #666666;
@@ -271,7 +271,7 @@ a {
   transition: color 400ms;
 }
 .nomad .friends__text:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .general {
@@ -310,7 +310,7 @@ a {
   margin-right: 7.5px;
 }
 .general .users__online {
-  color: #A4A4A4;
+  color: #a4a4a4;
   margin-left: 6px;
 }
 .general__input {
@@ -322,7 +322,7 @@ a {
   margin-right: 23px;
 }
 .general__input::placeholder {
-  color: #8D8D8D;
+  color: #8d8d8d;
 }
 .general__bell {
   margin-right: 22px;
@@ -384,7 +384,7 @@ a {
   opacity: 0.16;
 }
 .general .separator__text {
-  color: #8D8D8D;
+  color: #8d8d8d;
 }
 .general__delimiter {
   width: 823px;
@@ -406,7 +406,7 @@ a {
   margin-right: 21px;
 }
 .general .under__text {
-  color: #8D8D8D;
+  color: #8d8d8d;
   margin-right: 611px;
 }
 
@@ -440,7 +440,7 @@ a {
   width: 8px;
   height: 8px;
   border-radius: 4px;
-  background: #70CC16;
+  background: #70cc16;
 }
 .connection__designer {
   font-family: "Lato";
@@ -448,7 +448,7 @@ a {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  color: #5F6164;
+  color: #5f6164;
   margin-bottom: 20px;
 }
 .connection__social {
@@ -483,7 +483,7 @@ a {
 .connection__message-button {
   width: 135.5px;
   height: 25px;
-  background: #3577EF;
+  background: #3577ef;
   border-radius: 4px;
   margin-right: 2px;
   border: none;
@@ -496,12 +496,12 @@ a {
   font-size: 13px;
   line-height: 16px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .connection__message-button2 {
   width: 25.5px;
   height: 25px;
-  background: #3577EF;
+  background: #3577ef;
   border-radius: 4px;
   align-items: center;
   border: none;
@@ -517,7 +517,7 @@ a {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  color: #5F6164;
+  color: #5f6164;
   margin-bottom: 2px;
 }
 .connection .relations__text {

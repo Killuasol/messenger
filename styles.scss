@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/lato');
+@import url("https://fonts.cdnfonts.com/css/lato");
 
 a:active,
 a:hover,
@@ -7,7 +7,7 @@ a {
 }
 
 .body {
-  width: 1400px;
+  width: 100%;
   height: 800px;
   display: flex;
   margin: 0 auto;
@@ -20,16 +20,16 @@ a {
 //шаблоны
 
 %tpl-text-nomad {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #B5B5B5;
+  color: #b5b5b5;
 }
 
 %tpl-text-name {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -38,16 +38,16 @@ a {
 }
 
 %tpl-text-time {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  color: #8D8D8D;
+  color: #8d8d8d;
 }
 
 %tpl-text-info {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -184,19 +184,19 @@ a {
 .nomad {
   width: 236px;
   height: 764.5px;
-  background: #25272A;
+  background: #25272a;
   mix-blend-mode: normal;
   opacity: 0.75;
   padding: 35.5px 0 0 24px;
 
   //first-block
   &__text-head {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-right: 5px;
   }
 
@@ -235,7 +235,7 @@ a {
   }
 
   &__text-channels {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -282,7 +282,7 @@ a {
 
       &:hover {
         font-weight: 700;
-        color: #FFFFFF;
+        color: #ffffff;
       }
     }
   }
@@ -321,7 +321,7 @@ a {
     }
 
     &__online-check1 {
-      background: #70CC16;
+      background: #70cc16;
     }
 
     &__online-check2 {
@@ -338,7 +338,7 @@ a {
       transition: color 400ms;
 
       &:hover {
-        color: #FFFFFF;
+        color: #ffffff;
       }
     }
   }
@@ -379,7 +379,7 @@ a {
     }
 
     &__text {
-      font-family: 'Lato';
+      font-family: "Lato";
       font-style: normal;
       font-weight: 700;
       font-size: 20px;
@@ -390,7 +390,7 @@ a {
 
     &__online {
       @extend %tpl-text-nomad;
-      color: #A4A4A4;
+      color: #a4a4a4;
       margin-left: 6px;
     }
   }
@@ -405,7 +405,7 @@ a {
 
     &::placeholder {
       @extend %tpl-text-nomad;
-      color: #8D8D8D;
+      color: #8d8d8d;
     }
   }
 
@@ -457,7 +457,7 @@ a {
     }
 
     &__time {
-      @extend %tpl-text-time
+      @extend %tpl-text-time;
     }
 
     &__info {
@@ -496,7 +496,7 @@ a {
 
     &__text {
       @extend %tpl-text-info;
-      color: #8D8D8D;
+      color: #8d8d8d;
     }
   }
 
@@ -527,7 +527,7 @@ a {
 
     &__text {
       @extend %tpl-text-nomad;
-      color: #8D8D8D;
+      color: #8d8d8d;
       margin-right: 611px;
     }
   }
@@ -555,7 +555,7 @@ a {
   }
 
   &__text-head {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -568,16 +568,16 @@ a {
     width: 8px;
     height: 8px;
     border-radius: 4px;
-    background: #70CC16;
+    background: #70cc16;
   }
 
   &__designer {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: #5F6164;
+    color: #5f6164;
     margin-bottom: 20px;
   }
 
@@ -619,27 +619,27 @@ a {
   &__message-button {
     width: 135.5px;
     height: 25px;
-    background: #3577EF;
+    background: #3577ef;
     border-radius: 4px;
     margin-right: 2px;
     border: none;
     cursor: pointer;
 
     &__text {
-      font-family: 'Lato';
+      font-family: "Lato";
       font-style: normal;
       font-weight: 700;
       font-size: 13px;
       line-height: 16px;
       text-align: center;
-      color: #FFFFFF;
+      color: #ffffff;
     }
   }
 
   &__message-button2 {
     width: 25.5px;
     height: 25px;
-    background: #3577EF;
+    background: #3577ef;
     border-radius: 4px;
     align-items: center;
     border: none;
@@ -657,17 +657,17 @@ a {
     }
 
     &__text-head {
-      font-family: 'Lato';
+      font-family: "Lato";
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
       line-height: 14px;
-      color: #5F6164;
+      color: #5f6164;
       margin-bottom: 2px;
     }
 
     &__text {
-      font-family: 'Lato';
+      font-family: "Lato";
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -677,7 +677,3 @@ a {
     }
   }
 }
-
-
-
-
